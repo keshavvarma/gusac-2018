@@ -1,0 +1,49 @@
+
+body {
+      overflow: hidden;
+      background: #20093F;
+      width: 100%;
+      height: 100%;
+      background-image: url("../../images/web back.jpg");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+    }
+    
+    canvas {
+      position: absolute;
+      left: 50%;
+      right: 50%;
+      transform: translate(-50%,-50%);
+      height: 100%;
+      width: 100%;
+      z-index: 9;      
+    }
+
+    .image{
+      height: 70vh;
+      width: auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      z-index: 999;
+    }
+    .image img{
+      height: 100%;
+      width: auto;
+    }
+
+    
+
+
+    @media screen and (max-width: 500px) {
+      .image{
+        height: 55vh;
+        width: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+      }
+    }
