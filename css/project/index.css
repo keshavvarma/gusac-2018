@@ -10,16 +10,7 @@
     background-size: 100% 100%;
 
     }
-    .wrapper {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
-    .particule {
-      position: absolute;
-    }
+    
 
     .image{
       height: 70vh !important;
@@ -28,7 +19,7 @@
       top: 50% !important;
       left: 50% !important;
       transform: translate(-50%,-50%) !important;
-      z-index: 999 !important;
+      z-index: 9 !important;
     }
     .image img{
       height: 100% !important;

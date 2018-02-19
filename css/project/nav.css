@@ -113,7 +113,7 @@ body{
   
 }
 .nav-card{
-  height: 80vh; 
+  height: 500px; 
   box-shadow: 0 0 2px #000;
   width: 100%;
   opacity: 1;
@@ -172,16 +172,36 @@ a:hover{
   height: 0px;
   width: 100%;
   overflow: hidden;
-    -webkit-transition: all 600ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  -webkit-transition: all 600ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
   transition:         all 600ms cubic-bezier(0.785, 0.135, 0.15, 0.86); 
   object-fit: none;  
 }
+
+.nav-card .nav-card-overlay{
+  position: relative;
+  top: 0%;
+  left: 0%;
+  z-index: 9;
+  height: 0%;
+  width: 100%;
+  -webkit-transition: all 600ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition:         all 600ms cubic-bezier(0.785, 0.135, 0.15, 0.86); 
+  background-color: rgba(0,0,0,0.3);  
+}
+
 
 .nav-card:hover{
   background-color: #7b7c7c;
   color: #fff;  
 }
-.nav-card:hover img{
+.nav-card:hover img {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  object-fit: none;
+}
+
+.nav-card:hover .nav-card-overlay {
   height: 100%;
   width: 100%;
   overflow: hidden;

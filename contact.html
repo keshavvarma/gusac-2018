@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>GUSAC | Contact</title>
+	
+    <!-- Vendor/CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- build:css /css/site.css -->
+    <link rel="stylesheet" href="css/project/contact.css">
+    
+    
+
+
+</head>
+<body>
+  <div class="body">
+    <div id="background" class="contactus container">
+      <h1>Contact Us</h1>
+      <div class="row contact-details">
+        <div class="contact-form col-sm-12 col-md-6">
+          <h3>Get in Touch</h3>
+          <form>
+            <div class="field name-box">
+      		    <input type="text" id="name" placeholder="Who Are You?"/>
+              	<label for="name">N<span id="small">ame</span></label>
+      		      <span class="ss-icon">check</span>
+      	      </div>
+
+      	      <div class="field email-box">
+      		      <input type="text" id="email" placeholder="name@email.com"/>
+      		      <label for="email">E<span id="small">mail</span></label>
+      		      <span class="ss-icon">check</span>
+      	      </div>
+
+      	      <div class="field msg-box">
+      		      <textarea id="msg" rows="4" placeholder="Your message goes here..."/></textarea>
+      		      <label for="msg">M<span id="small">sg</span></label>
+      		      <span class="ss-icon">check</span>
+      	      </div>
+
+      	      <input class="button" type="submit" value="Send" />
+            </form>
+          </div>
+          <div class="address col-sm-12 col-md-6">
+            <h3>We are located here</h3>
+            <div class="row">
+              <div class="address-block col-lg-6">
+                <p><span class="sub-heading">Address:</span></br>Lorem Ipsum is simply,</br>lorem</br>lorem</br>lorem</p>
+              </div>
+              <div class="phone-block col-lg-6">
+                <p><span class="sub-heading">Phone:</span> </br>+91 9490230173</p>
+                <p><span class="sub-heading">E-mail:</span> </br>1210316960@gmail.com</p>
+              </div>
+            </div>
+            <section id="cd-google-map">
+            	<div id="google-container">
+               <div id="map"></div> 
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+
+<script>
+      function initMap() {
+        var uluru = {lat: 17.781194, lng: 83.377222};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 17,
+          center: uluru
+        });
+
+        var contentString = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading">event1</h1>'+
+            '<div id="bodyContent">'+
+            '<p><b>event1</b>, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto harum laborum eum magnam officia, </p>'+
+            '<p><a href="https://goo.gl/maps/H7fLhbDM13p" target="blank">'+
+            'View on google maps</a> '+
+            '</p>'+
+            '</div>'+
+            '</div>';
+
+        var infowindow = new google.maps.InfoWindow({
+          content: contentString,
+          maxWidth: 200
+        });
+
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+          title: 'Uluru (Ayers Rock)'
+        });
+        marker.addListener('click', function() {
+          infowindow.open(map, marker);
+        });
+      }
+    </script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBz9Q46tuVMR4_R7MLwHLTO_M4FoTwcMrY&callback=initMap"></script>
+</html>
