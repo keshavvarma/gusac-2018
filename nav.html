@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8" />
+  
+  <title>GITAM ACM | Home</title> 
+
+
+  <!--~~~~~~~~~~~~~~~~~~BOOTSTRAP~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+
+<!-- ~~~~~~~~~~~~VIEWPORT META~~~~~~~~~ -->  
+<meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+
+
+<!-- ~~~~~~~~~~~~~~~~~~~LOCAL CSS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+
+  <link rel = "stylesheet" type = "text/css" href = "css/project/nav.css" />
+    
+
+
+
+</head>
+<body >
+
+<header>
+  <div class="container-fluid" >
+    <div class="button_container" id="toggle" style="z-index: 9999999">
+      <span class="top"></span>
+      <span class="middle"></span>
+      <span class="bottom"></span>
+    </div>
+    <div class="overlay" id="overlay" style="z-index: 999">
+      <nav class="overlay-menu">
+        <div class="navbar">
+          <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-2">
+              <a href="">
+                <div  class="nav-card ">                 
+                    <img src="images/web back.jpg" alt="">
+                     <p class="verticaltext">home</p>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-2">
+              <a href="">
+                <div  class="nav-card">
+                  <p class="verticaltext">lorem</p>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-2">
+              <a href="">
+                <div  class="nav-card">
+                  <p class="verticaltext">lorem</p>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-2">
+              <a href="">
+                <div  class="nav-card">
+                  <p class="verticaltext">lorem</p>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-2">
+              <a href="">
+                <div  class="nav-card">
+                  <p class="verticaltext">lorem</p>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-1"></div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+<div class="body">
+
+  
+</div> 
+
+
+</body>
+
+
+<script type="text/javascript">
+  $('#toggle').click(function() {
+   $(this).toggleClass('active');
+   $('#overlay').toggleClass('open');
+   $('.body').toggleClass('blur');
+  });
+</script>
+
+</script>
+
+</html>
